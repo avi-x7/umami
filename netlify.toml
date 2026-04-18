@@ -7,3 +7,26 @@ included_files = ["node_modules/.geo/**"]
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+
+# Redirects to make /script.js and /api/* available at the root level
+# --------------------------------------------------------------------
+[[redirects]]
+  from = "/script.js"
+  to = "/20bc14c648b0c38e316caf6f3719deca9038e44d/script.js"
+  status = 200
+  force = false   # Ensures the file exists before rewriting
+
+# If you've set a custom tracker script name (e.g., TRACKER_SCRIPT_NAME=x.js)
+# add an alias for that too. Example:
+# [[redirects]]
+#   from = "/x.js"
+#   to = "/vault/x.js"
+#   status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "/20bc14c648b0c38e316caf6f3719deca9038e44d/api/:splat"
+  status = 200
+  force = false
+
