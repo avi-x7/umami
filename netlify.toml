@@ -25,8 +25,7 @@ included_files = ["node_modules/.geo/**"]
 #   status = 200
 
 [[redirects]]
-  from = "/api/*"
-  to = "/20bc14c648b0c38e316caf6f3719deca9038e44d/api/:splat"
+  from = "/api/send"
+  to = "/20bc14c648b0c38e316caf6f3719deca9038e44d/api/send"
   status = 200
-  force = false
 
