@@ -28,4 +28,5 @@ included_files = ["node_modules/.geo/**"]
   from = "/api/send"
   to = "/20bc14c648b0c38e316caf6f3719deca9038e44d/api/send"
   status = 200
+  force = true
 
