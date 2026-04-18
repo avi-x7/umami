@@ -51,8 +51,9 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: getBaseUrl(headerStore),
     title: {
-      template: '%s | Umami',
-      default: 'Umami',
+      template: 'Monday | Cyberuniversity',
+      default: '| cyberuniversity.tech',
     },
+     description:"Is today monday ??",
   };
 }
