@@ -33,9 +33,9 @@ export function LoginForm() {
   return (
     <Column justifyContent="center" alignItems="center" gap="6">
       <Icon size="lg">
-        <Logo />
+        🔑
       </Icon>
-      <Heading>umami</Heading>
+      <Heading>Expectedd buddy </Heading>
       <Form onSubmit={handleSubmit} error={getErrorMessage(error)} style={{ minWidth: 300 }}>
         <FormField
           label={t(labels.username)}
