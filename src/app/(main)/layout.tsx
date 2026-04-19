@@ -11,8 +11,9 @@ export default function ({ children }) {
 }
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s | Umami',
-    default: 'Umami',
-  },
+   title: {
+      template: 'Monday | Cyberuniversity',
+      default: '| cyberuniversity.tech',
+    },
+     description:"Is today monday ??",
 };
